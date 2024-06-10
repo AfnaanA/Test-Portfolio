@@ -27,27 +27,28 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Short biography and background in data science.</p>
+        <p>I'm a data scientist with a passion for uncovering insights from data. My background in psychology and neuroscience, combined with my expertise in data science and machine learning, allows me to tackle complex problems in healthcare, finance, and energy industries.</p>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project">
+        <div class="project-card">
             <h3>Predictive Maintenance for Offshore Wind Farms</h3>
-            <p>Description of the project.</p>
-            <a href="https://github.com/username/predictive-maintenance-wind">View Project</a>
+            <p>Developed predictive maintenance models to optimize operations and reduce downtime in offshore wind farms.</p>
+            <a href="https://github.com/username/predictive-maintenance-wind" target="_blank">View Project</a>
         </div>
+        <!-- Add more project cards as needed -->
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
-        <form>
+        <form action="https://formspree.io/f/{your-form-id}" method="POST">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
+            <input type="text" id="name" name="name" required>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" name="email" required>
             <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
+            <textarea id="message" name="message" required></textarea>
             <input type="submit" value="Send">
         </form>
     </section>
