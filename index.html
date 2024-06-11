@@ -1,60 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Science Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - Custom CSS link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - Google font link
+  -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="home">
-        <div class="content">
-            <h1>Your Name</h1>
-            <p>Data Scientist | Machine Learning Engineer</p>
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Your Name" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Your Name">Your Name</h1>
+
+          <p class="title">Data Scientist</p>
         </div>
-    </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a data scientist with a passion for uncovering insights from data. My background in psychology and neuroscience, combined with my expertise in data science and machine learning, allows me to tackle complex problems in healthcare, finance, and energy industries.</p>
-    </section>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+        </button>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h3>Predictive Maintenance for Offshore Wind Farms</h3>
-            <p>Developed predictive maintenance models to optimize operations and reduce downtime in offshore wind farms.</p>
-            <a href="https://github.com/username/predictive-maintenance-wind" target="_blank">View Project</a>
-        </div>
-        <!-- Add more project cards as needed -->
-    </section>
+      </div>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <form method="POST" action="">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <input type="submit" value="Send">
-        </form>
-    </section>
+      <div class="sidebar-info_more">
 
-    <footer>
-        <p>&copy; 2024 Your Name</p>
-    </footer>
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="#">youremail@example.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="#">+123 456 7890</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+              <time datetime="1990-01-01">January 1, 1990</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Your City, Your Country</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #MAIN CONTENT
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a Data Scientist specializing in uncovering insights from data. I enjoy solving complex problems in healthcare, finance, and energy industries.
+          </p>
+
+          <p>
+            My goal is to develop data-driven solutions that are both functional and user-friendly. I am passionate about data science, machine learning, and helping businesses make informed decisions.
+          </p>
+        </section>
+
+      </article>
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="project-list">
+
+            <li class="project-item active" data-filter-item>
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-1.jpg" alt="Project 1" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Predictive Maintenance for Offshore Wind Farms</h3>
+                <p class="project-category">Data Science</p>
+
+              </a>
+            </li>
+
+            <!-- Add more project items as needed -->
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form class="form">
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
+
+            <button class="form-btn" type="submit">
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!--
+    - Custom JS link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - Ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
